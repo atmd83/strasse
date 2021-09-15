@@ -1,8 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const cache = require('memory-cache');
 const axios = require('axios');
 
 const app = express();
+app.use(cors());
 
 const secondsToCache = 43200; // 12 hours
 
